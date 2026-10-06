@@ -1,0 +1,9 @@
+node_modules
+dist
+*.log
+.env
+.env.*
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+.backup-before-cleanup-*

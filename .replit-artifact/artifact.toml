@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Falling Letters"
+description = "An arcade typing trainer where players type falling letter tiles from fresh paragraphs, protect three lives, and advance through progressively longer and faster stages."
+version = "1.0.0"
+id = "artifacts/falling-letters"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25699
+
+[services.development]
+run = "pnpm --filter @workspace/falling-letters run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/falling-letters", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/falling-letters/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25699"
+BASE_PATH = "/"
