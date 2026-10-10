@@ -1,48 +1,105 @@
+<div align="center">
+
 # Falling Letters
 
-A typing game. One letter at a time crosses the screen from left to right while the full passage stays in view below, so you always see the words you are typing.
+**A typing game built to make learning the keyboard more fun.**
 
-## How to play
+Type each moving letter before it reaches the floor. Clear passages, survive each stage, and improve your typing skills.
 
-- Press **Space** or the start button to begin.
-- Type the letter moving along the runway before it reaches the floor.
-- A wrong key or a missed letter costs a life. You have three.
-- Clear a passage to move on. Each stage adds 50 words and a little more speed.
-- Press **Esc** to pause.
+[**Play Falling Letters →**](https://falling-letters-rho.vercel.app/)
 
-Your best score is saved in the browser.
+<br />
 
-## Run it locally
+![React](https://img.shields.io/badge/React-2026-61DAFB?logo=react\&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-3178C6?logo=typescript\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-Powered-646CFF?logo=vite\&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-You need Node.js 20 or newer.
+</div>
+
+---
+
+## Why i built it 
+
+My sister got a keyboard for her tablet and needed a way to learn how to type on it.
+
+So I built her a game.
+
+**Falling Letters** turns typing practice into a simple challenge: watch the letter, find the key, and type it before it reaches the floor.
+
+## How to Play
+
+1. Press **Space** or click the start button to begin.
+2. Type the letter moving across the runway before it reaches the floor.
+3. Avoid mistakes. Wrong keys and missed letters cost a life.
+4. Clear the passage to advance to the next stage.
+5. Keep going as passages get longer and letters move faster.
+
+You start with **three lives**. Press **Esc** to pause.
+
+Your best score is saved in your browser.
+
+## Getting Started
+
+### Requirements
+
+* [Node.js](https://nodejs.org/) 20 or newer
+* npm
+
+### Installation
 
 ```bash
+git clone https://github.com/Reabot6/falling-letters
+cd falling-letters
 npm install
 npm run dev
 ```
 
-Then open the address Vite prints (usually http://localhost:5173).
+Open the local URL printed in your terminal. Vite typically uses `http://localhost:5173`.
 
-```bash
-npm run build      # production build in dist/
-npm run preview    # serve the production build
-npm run typecheck  # TypeScript check
-```
+### Available Commands
 
-## Project layout
+| Command             | Description                  |
+| ------------------- | ---------------------------- |
+| `npm run dev`       | Start the development server |
+| `npm run build`     | Build the production version |
+| `npm run preview`   | Preview the production build |
+| `npm run typecheck` | Check TypeScript types       |
 
-```
+## Project Structure
+
+```text
 src/
-  App.tsx                 game screen
-  hooks/useTypingGame.ts  game state, passage generation, input handling
-  components/             error boundary
-  index.css               styles
+├── App.tsx
+├── hooks/
+│   └── useTypingGame.ts
+├── components/
+├── index.css
+└── ...
 ```
 
-## Built with
+| Path                     | Purpose                                            |
+| ------------------------ | -------------------------------------------------- |
+| `App.tsx`                | Main game screen                                   |
+| `hooks/useTypingGame.ts` | Game state, passage generation, and keyboard input |
+| `components/`            | UI components and error boundary                   |
+| `index.css`              | Global styles                                      |
 
-React, TypeScript, Vite and Tailwind CSS.
+## Built With
+
+* [React](https://react.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Vite](https://vite.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
 ## License
 
-MIT. Built by [Reabot6](https://seofg.xyz).
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
+
+---
+
+<div align="center">
+
+**[Play the Game](https://falling-letters-rho.vercel.app/)** · Built by [Reabot6](https://seofg.xyz/)
+
+</div>
